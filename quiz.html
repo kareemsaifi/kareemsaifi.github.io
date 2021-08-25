@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pictorial Quiz</title>
+        <meta author="Kareem Saifi" lang="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Stylesheets/main.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="Stylesheets/wide.css">
+    </head>
+    <body>
+        <nav id="navigation">
+            <a href = "index.html" class="nav_link">Home</a>
+            <a href = "degree.html" class="nav_link">My Degree</a>
+            <a href = "contact.html" class="nav_link">Contact Me</a>
+        </nav>
+        <div id="main">
+        <header>
+            <p id="menu" onClick="trigger()">Menu</p>
+            <img src="Pictures/logo.png" id="logo" alt=''/>
+        </header>
+        <main>
+            <div class="center_text">
+                <h1>Pictorial Quiz</h1>
+                <p>In this page you will be asked questions related to my degree, each question has one answer in the form of Mutliple Choice Questions</p>
+            </div>
+            <div id="questions">
+                <div class="question" id="question1">
+                    <h2>Question 1:</h2>
+                    <img src="Pictures/uos_logo.jpg" alt="University of Sheffield Logo">
+                    <p>In the University of Sheffield Logo there is a latin statement "Disc Doce" what does this mean?</p>
+                    <form id="firstQuestion">   
+                        <div class="answers">
+                            <div> 
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="Answer" id="first" value="">
+                                        <label for="first">Learn and Enjoy</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="Answer" id="second" value="">
+                                        <label for="second">Teach and Enjoy</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="Answer" id="third" value="a">
+                                        <label for="third">Learn and Teach</label>       
+                                    </li> 
+                                    <li>
+                                        <input type="radio" name="Answer" id="fourth" value="">
+                                        <label for="fourth">Learn and Improve</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                            <button id="btn_next1" class="button next" type="button">Next</button>
+                          
+                    </form>
+                </div>
+                <div class="question" id="question2"> 
+                    <h2>Question 2:</h2>
+                    <img src="Pictures/programming.jpg" alt="A picture of a laptop with code">
+                    <p>I have mentioned that java is an Object Oriented programming language, which of the below is not a programming language type</p>
+                    <form id="secondQuestion">
+                        <div class="answers">
+                            <div> 
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="Answer" id="first" value="">
+                                        <label for="first">Pseudo Programming Languages</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="Answer" id="second" value="">
+                                        <label for="second">Procedural Programming Languages</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="Answer" id="third" value="a">
+                                        <label for="third">Functional Programming Languages</label>       
+                                    </li> 
+                                    <li>
+                                        <input type="radio" name="Answer" id="fourth" value="">
+                                        <label for="fourth">All are valid</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="btn_next2" class="button next" type="button">Next</button>   
+                    </form>
+                </div>
+                <div class="question" id="question3">
+                    <h2>Question 3:</h2>
+                    <img src="Pictures/lecture_theater.jpg" alt="A picture of a lecture theater">
+                    <p>What is the rank of the University of Sheffield in the world according to the 2021 QS World University Ranking</p>
+                    <form id="thirdQuestion">
+                        <div class="answers">
+                            <div> 
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="Answer" id="first" value="">
+                                        <label for="first">78th</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="Answer" id="second" value="">
+                                        <label for="second">80th</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="Answer" id="third" value="a">
+                                        <label for="third">117th</label>       
+                                    </li> 
+                                    <li>
+                                        <input type="radio" name="Answer" id="fourth" value="">
+                                        <label for="fourth">93rd</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button id="btn_next3" class="button next" type="button">Submit</button>  
+                    </form>
+                </div>
+                <div id = "score_div" class="question">
+                    <h1>Congratulations! you have finished the quiz!</h1>
+                    <h1>Your score was:</h1>
+                    <h2><span id="score">a</span>/3</h2>
+                    <h1>The correct answers were: </h1>
+                    <ul>
+                        <li>Learn and Teach</li>
+                        <li>Pseudo Programming Languages</li>
+                        <li>93rd</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class = "footer_header">Want to get in touch with me?</h1>
+            <p>Feel free to contact me using the <a href="contact.html" title="Contact page">contact form</a> that you can find in the contact page</a></p>
+            <p id="copyright">Copyright protected &copy; 2020 Kareem Saifi All Rights Reserved</p>
+        </footer>
+        </div>
+        <script src="Scripts/script.js"></script>
+        <script src="Scripts/questions.js"></script>
+    </body>
+</html>

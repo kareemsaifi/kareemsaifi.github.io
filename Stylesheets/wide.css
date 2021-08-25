@@ -1,0 +1,135 @@
+footer p,h1 {
+    margin: 1%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 2em;
+}
+.item{
+    width: 100%;
+    margin-top: 0;
+}
+.header_extension{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.header_extension p{
+    margin: auto 0;
+}
+.header_extension p{
+    width: 70%;
+}
+.center_text{
+    width: 350px;
+    margin: 0 auto;
+}
+h2,h3{
+    margin-top: 0;
+}
+#hobbies p{
+    text-align: left;
+    margin: auto 0;
+}
+
+.header_extension img{
+    max-width: 60%;
+    display: block;
+    margin-left: autpo;
+}
+
+#special_header{
+    font-size: 2em;
+    color: white;
+}
+
+
+
+.sgrid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 4%;
+    row-gap: 2em;
+    margin: 2% 5%;
+}
+
+.sgrid .item{
+    justify-content: center;
+}
+.sgrid .item p{
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#social_icons a{
+    justify-self: left;
+}
+
+#social_icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin: 0;
+    row-gap: 1em;
+}
+#social h2{
+    text-align: left;
+}
+#direct_contact{
+    margin: 0;
+}
+#contact_form{
+    margin: 0 0; 
+}
+
+label{
+    text-align: left;
+}
+
+#external_contact{
+    justify-self: right;
+    margin-top: 50%;
+    margin-right: 5%;
+}
+
+#questions{
+    max-width: 60%;
+}
+
+.answers label{
+    font-size: 1.5em;
+    margin: 0;
+    display: inline;
+}
+input[type='radio'] { transform: scale(1.3); height: 1em;}
+.answers{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.answers div{
+    justify-self: center;
+}
+
+.question h2{
+    font-size: 2em;
+}
+.question p{
+    font-size: 1.5em;
+}
+canvas{
+    max-width: 80%;
+}
+
+.canvas_buttons{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 2em auto;
+}
+.canvas_buttons button{
+    width: 80%;
+    background-color: #264c70;
+    color: white;
+    justify-self: center;
+}

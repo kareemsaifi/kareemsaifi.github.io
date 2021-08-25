@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta author="Kareem Saifi" lang="en" charset="utf 8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Stylesheets/main.css" rel="stylesheet">
+        <link href="Stylesheets/wide.css" media="screen and (min-width: 1025px)" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navigation">
+            <a href = "index.html" class="nav_link">Home</a>
+            <a href = "degree.html" class="nav_link">My Degree</a>
+            <a href = "contact.html" class="nav_link">Contact Me</a>
+        </nav>
+        <div id="main">
+        <header>
+            <p id="menu" onClick="trigger()">Menu</p>
+            <img src="Pictures/logo.png" id="logo" alt=''/>
+        </header>
+        <main>
+            <section class="center_text">
+                <h1>Contact Me</h1>
+                <p>Is there anything else you'd like to learn about me? feel free to send me an email.</p>
+                <p>All you have to do is fill this form and click the submit button and i'll receive your message</p>
+            </section>
+            <div class="grid">
+                <div id="contact_form">
+                    <form action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php" method="post" id="form">
+                        <input type="hidden" name="recipients" value="ksaifi1@sheffield.ac.uk">
+                        <ul>
+                            <li>
+                                <label for="from">Your Name</label>
+                                <input type="text" id="from" name="from" class="input" placeholder="Enter your name here..." required>
+                            </li>
+                            <li>
+                                <label for="email">Your email address:</label>
+                                <input type="email" id="email" name="email" class="input" placeholder="Enter your email here..." required>
+                            </li>
+                            <li>
+                                <label for="message">Your message</label>
+                                <textarea form = "form" id="message" name="message" class="input" placeholder="Enter your message here..." required></textarea>
+                            </li>
+                            <li>
+                                <input type="submit" name="submit" id="submit" class="button" value="Submit">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div id="external_contact">
+                    <section id="direct_contact">
+                        <p>Or you can email me directly via:</p>
+                        <a class="email" href="mailto:ksaifi1@sheffield.ac.uk">ksaifi1@sheffield.ac.uk</a>
+                    </section>
+                    <section id="social">
+                        <h2>Find me on social media</h1>
+                        <div id="social_icons">
+                            <a href="https://www.facebook.com/kareem.saifi02/" target="_blank"><img src="Pictures/facebook.png"/></a>
+                            <a href="https://twitter.com/_kareemsaifi" target="_blank"><img src="Pictures/twitter.png"/></a>
+                            <a href="https://www.instagram.com/_.kareemsaifi/" target="_blank"><img src="Pictures/instagram.png"/></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="short_footer">
+            <p id="copyright">Copyright protected &copy; 2020 Kareem Saifi</p>
+        </footer>
+        </div>
+        <script src="Scripts/script.js"></script>
+    </body>
+</html>

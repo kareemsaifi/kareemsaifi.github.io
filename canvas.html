@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Visualisation</title>
+        <meta author="Kareem Saifi" lang="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Stylesheets/main.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="Stylesheets/wide.css">
+    </head>
+    <body>
+        <nav id="navigation">
+            <a href = "index.html" class="nav_link">Home</a>
+            <a href = "degree.html" class="nav_link">My Degree</a>
+            <a href = "contact.html" class="nav_link">Contact Me</a>
+        </nav>
+        <div id="main">
+        <header>
+            <p id="menu" onClick="trigger()">Menu</p>
+            <img src="Pictures/logo.png" id="logo" alt=''/>
+        </header>
+        <main>
+        <div class="grid">
+            <div>
+                <h1>The data</h1>
+                <table>
+                    <tr><th>Day</th><th>Activity</th><th>Time Spent</th></tr>
+                    <tr><td>Saturday</td><td>Studying</td><td>4</td></tr>
+                    <tr><td></td><td>Playing</td><td>6</td></tr>
+                    <tr><td></td><td>Watching Series</td><td>5</td></tr>
+                    <tr><td>Sunday</td><td>Studying</td><td>4</td></tr>
+                    <tr><td></td><td>Playing</td><td>6</td></tr>
+                    <tr><td></td><td>Watching Series</td><td>5</td></tr>
+                    <tr><td>Monday</td><td>Studying</td><td>5</td></tr>
+                    <tr><td></td><td>Playing</td><td>3</td></tr>
+                    <tr><td></td><td>Watching Series</td><td>4</td></tr>
+                    <tr><td>Tuesday</td><td>Studying</td><td>6</td></tr>
+                    <tr><td></td><td>Playing</td><td>5</td></tr>
+                    <tr><td></td><td>Watching Series</td><td>4</td></tr>
+                    <tr><td>Wednesday</td><td>Studying</td><td>10</td></tr>
+                    <tr><td></td><td>Playing</td><td>2</td></tr>
+                    <tr><td></td><td>Watching Series</td><td>3</td></tr>
+                    <tr><td>Thursday</td><td>Studying</td><td>8</td></tr>
+                    <tr><td></td><td>Playing</td><td>3</td></tr>
+                    <tr><td></td><td>Watching Series</td><td>2</td></tr>
+                    <tr><td>Friday</td><td>Studying</td><td>6</td></tr>
+                    <tr><td></td><td>Playing</td><td>5</td></tr>
+                    <tr><td></td><td>Watching Series</td><td>2</td></tr>
+                </table>
+            </div>
+            <div>
+                <h1>The Chart</h1>
+                <canvas id="canvas"></canvas>
+                <canvas id="legend"></canvas>
+                <div class="canvas_buttons">
+                <button id="btn_pie">Pie Chart</button>
+                <button id="btn_bar">Bar Chart</button>
+                <button id="btn_line">Line Chart</button>
+                </div>
+                <div class = "canvas_buttons">
+                <button id="btn_theme1">First theme</button>
+                <button id="btn_theme2">Second theme</button>
+                <button id="btn_theme3">Third theme</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class = "footer_header">Want to get in touch with me?</h1>
+            <p>Feel free to contact me using the <a href="contact.html" title="Contact page">contact form</a> that you can find in the contact page</a></p>
+            <p id="copyright">Copyright protected &copy; 2020 Kareem Saifi All Rights Reserved</p>
+        </footer>
+        </div>
+        <script src="Scripts/script.js"></script>
+        <script src="Scripts/canvas.js"></script>
+    </body>
+</html>

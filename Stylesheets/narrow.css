@@ -1,0 +1,10 @@
+.sgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.center_text{
+    width: 350px;
+    margin: 0 auto;
+}
+
